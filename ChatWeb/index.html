@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>chatRTC</title>
+    <link rel="stylesheet" type="text/css" href="style/headers.css">
+    <link rel="stylesheet" type="text/css" href="style/chat_rtc.css">
+    <script defer type="text/javascript" src="js/adapter.js"></script>
+    <script defer type="text/javascript" src="js/chat_client.js"></script>
+    <script defer type="text/javascript" src="js/chat_rtc.js"></script>
+  </head>
+
+  <body>
+    <section role="region" class="skin-dark" id="login-pane">
+      <header>
+        <h1>Login/Create</h1>
+        <menu>
+          <button id="connect-button">Connect</button>
+          <button id="create-room-button">Create Chatroom</button>
+        </menu>
+      </header>
+      <div>
+        <div><label for="id-input">ID: </label><input id="id-input" type="text"></div>
+        <div><label for="room-id-input">Room ID: </label><input id="server-id-input" type="text"><br>
+          <span>(required only when connect to server)</span></div>
+      </div>
+    </section>
+    <section role="region" class="skin-dark" id="chatroom">
+      <header>
+        <span>Message: </span><input id="input" type="text">
+        <menu>
+          <button id="send-button">Send</button>
+        </menu>
+      </header>
+      <div id="message"></div>
+    </section>
+  </body>
+</html>
